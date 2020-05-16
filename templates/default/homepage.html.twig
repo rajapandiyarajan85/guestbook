@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body_id 'homepage' %}
+{% block body %}
+<div class="jumbotron">
+	<h1>Welcome to Guestbook App</h1>
+	<p class="lead">What's the purpose of a guest book? It's to give wedding guests a chance to offer warm wishes and advice as they celebrate 
+	your special day with you. The guest book is something to keep and look back on for years to come.</p>
+	<a class="btn btn-lg btn-primary" href="{{ path('app_login') }}" role="button">Login to add your memories »</a>
+</div>  
+{% endblock %}

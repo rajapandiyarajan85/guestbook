@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Guestbook app using symfony framework 4">
+    <meta name="author" content="Raja">
+    <title>{% block title %}Welcome to Guest Book App{% endblock %}</title>
+	<link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />    
+    {% block stylesheets %}{% endblock %}
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="">Home</a>            
+			{% if app.user %}
+			<div class="mb-3 navbar-brand">
+				Welcome {{ app.user.name }}, <a href="{{ path('app_logout') }}">Logout</a>
+			</div>
+			{% endif %}
+        </div>
+    </nav>
+</header>
+<main role="main" class="container">
+	{% for message in app.flashes('success') %}
+		<div class="alert alert-success">
+			{{ message }}
+		</div>
+	{% endfor %}
+	{% block body %}
+		
+	{% endblock %}
+      
+</main>
+
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>
