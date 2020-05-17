@@ -2,15 +2,20 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+### GuestBook App ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* * Two types of users - Admin and User
+* 1.0
 
 ### How do I get set up? ###
 
 * Summary of set up
+  To run the applicaation below are the pre-requisites 
+	* PHP ^ 7
+	* MYSQL
+	* Composer
+	* Bootstrap libraries
+	* Jquery
 * Configuration
 * Dependencies
 * Database configuration
