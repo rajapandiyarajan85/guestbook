@@ -14,7 +14,7 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="">Home</a>            
+            <a class="navbar-brand" href="{{ path('app_homepage') }}">Home</a>            
 			{% if app.user %}
 			<div class="mb-3 navbar-brand">
 				Welcome {{ app.user.name }}, <a href="{{ path('app_logout') }}">Logout</a>
