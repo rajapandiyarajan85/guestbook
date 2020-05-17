@@ -50,7 +50,7 @@ class BookController extends AbstractController
     public function show()
     {
 		$repository = $this->getDoctrine()->getRepository(Book::class);	
-		$bookList = $repository->findAll();	
+		$bookList = $repository->findAll(1);	
 		
         return $this->render('book/show.html.twig', [
             'bookList' => $bookList,

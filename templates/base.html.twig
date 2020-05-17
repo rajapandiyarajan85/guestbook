@@ -35,7 +35,10 @@
       
 </main>
 
-
-{% block javascripts %}{% endblock %}
+{% block javascript %}
+<script src="{{ asset('assets/js/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/common.js') }}"></script>
+{% endblock %}
 </body>
 </html>

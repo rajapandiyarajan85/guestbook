@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ListController!{% endblock %}
+
+{% block body %}
+
+<div class="my-3 p-3 bg-white rounded box-shadow">
+	{% if bookList is not empty %}  
+	<h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>	
+	<table id="example" class="table table-striped table-bordered" style="width:100%">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Title</th>
+					<th>Comments</th>  
+					<th>Author</th>  
+					<th>Status</th>  
+					<th>Approve</th>     
+					<th>Delete</th>     
+				</tr>
+			</thead>
+			 <tbody>			 
+			 {% for guestBook in bookList %}
+				<tr>
+					<td>{{ guestBook[0].id }}</td>
+					<td>{{ guestBook[0].title }}</td>
+					<td>{{ guestBook[0].comments }}</td>
+					<td>{{ guestBook['name'] }}</td>  
+					<td id="status_{{guestBook[0].id}}">						
+						{% if (guestBook[0].status) %}
+						Active
+						{% else %}
+						In Active
+						{% endif %} 
+					</td> 
+					<td>
+						<a href='javascript:void(0)' id='update_{{guestBook[0].id}}' rel="update" data-id="{{guestBook[0].id}}"  data-value="{{guestBook[0].status}}"> 
+						{% if (guestBook[0].status) %} Unpublish
+						{% else %}
+						Publish
+						{% endif %} 
+						</a>
+					</td> 
+					<td><a href='delete/{{guestBook[0].id}}'>Delete </a></td> 
+				</tr>
+			{% endfor %}    						
+			</tbody>
+		</table>
+		{% else %}
+		<h6 class="border-bottom border-gray pb-2 mb-0">No updates</h6>
+	{% endif %}
+		  
+</div>
+{% endblock %}
