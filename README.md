@@ -41,6 +41,8 @@ This README would normally document whatever steps are necessary to get your app
 	CREATE USER 'guest'@'localhost' IDENTIFIED BY '5@74A2iTTN5MZM-';
 	GRANT ALL PRIVILEGES ON *.* TO 'guest'@'localhost' WITH GRANT OPTION;
 	
+	Note: If you don't prefer above DB user you can create on your own and update it in .env DB configuration
+	
 	Step 2: 
 	php bin/console doctrine:database:create  // to create DB based on .env configuration
 	
@@ -49,6 +51,8 @@ This README would normally document whatever steps are necessary to get your app
 	
 	Step 4: 
 	php bin/console doctrine:fixtures:load  // create dummy data in DB -  For this app created username / password in user table
+	
+	
 	
 * How to run tests
 	TO DO
