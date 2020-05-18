@@ -74,4 +74,19 @@ More unit tests
 More restrictions with users and page access
 Effective cache
 
+### Screens ###
+
+![image](https://user-images.githubusercontent.com/65368700/82209987-25b9ab80-9906-11ea-816b-d1cf27c0601b.png)
+
+![image](https://user-images.githubusercontent.com/65368700/82210042-39fda880-9906-11ea-80d6-4f749ba29e15.png)
+
+![image](https://user-images.githubusercontent.com/65368700/82210091-4eda3c00-9906-11ea-8e49-2aaa9060426a.png)
+
+![image](https://user-images.githubusercontent.com/65368700/82210140-60234880-9906-11ea-8ce8-f6fb33a707fe.png)
+
+![image](https://user-images.githubusercontent.com/65368700/82210173-7204eb80-9906-11ea-945a-cb0eee24d1ce.png)
+
+![image](https://user-images.githubusercontent.com/65368700/82210222-88ab4280-9906-11ea-9ffa-9c7f5097ad95.png)
+
+
 Hope this app helpful to begin good with Symfony. Thanks for your time. 
