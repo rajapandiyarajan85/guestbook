@@ -58,18 +58,5 @@ class BookRepository extends ServiceEntityRepository
 					->getQuery()
 					;		
 		return $qb->execute();
-	}
-    
-
-    /*
-    public function findOneBySomeField($value): ?Book
-    {
-        return $this->createQueryBuilder('b')
-            ->andWhere('b.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
+	}   
 }

@@ -23,8 +23,8 @@ class UserFixtures extends Fixture
     {
 		$this->userDummyData = [
             // $userData = [$fullname, $password, $email, $roles];
-            ['Raja Pandiyarajan', 'Test@123', 'raja.pandiyarajan@yahoo.com', ['ROLE_ADMIN']],            
-            ['Raja Pandiyarajan', 'Test@123', 'raja.pandiyarajan@gmail.com', ['ROLE_USER']],
+            ['Raja Admin', 'Test@123', 'admin@yahoo.com', ['ROLE_ADMIN']],            
+            ['Raja User', 'Test@123', 'user@yahoo.com', ['ROLE_USER']],
         ];
 		foreach ($this->userDummyData as [$name,$password, $email, $roles]) {
             $user = new User();
@@ -35,9 +35,6 @@ class UserFixtures extends Fixture
 
             $manager->persist($user);            
         }
-        // $product = new Product();
-        // $manager->persist($product);
-
         $manager->flush();
     }
 }
