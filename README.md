@@ -7,13 +7,15 @@ This README would normally document whatever steps are necessary to get your app
 * A simple guest book application to manage users content with addition to approval from admin for the same. 
 * Version - 1.0
 
-### Prerequisite set up ###
+### Pre-requisite set up ###
 
 * Summary of set up
   To run the application below are the pre-requisites 
+	* Composer
 	* PHP 7.1.29 or higher
 	* pdo_mysql PHP extension enabled;
 	* Mysql 5.X.X or above
+	* Symfony ^ 4.4
 	* XAMPP or WAMP or LAMP - server to run application
 	* other options to have built in web server:
 		 * composer require symfony/web-server-bundle --dev
@@ -65,7 +67,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-We have used many useful packages annotations, apache-pack, Maker-bundle, Form, Repository. 
+We have used many useful packages annotations, apache-pack, Maker-bundle, Form, Repository, Fixtures. 
 
 ### To Do ###
 More unit tests
